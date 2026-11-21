@@ -1,0 +1,21 @@
+# Secrets - NEVER commit
+.env
+*.env
+!.env.example
+
+# Generated vector database
+chroma_db/*
+!chroma_db/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

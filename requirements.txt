@@ -1,0 +1,15 @@
+# Core app
+streamlit>=1.40,<2
+python-dotenv>=1.0,<2
+
+# RAG stack (LangChain 1.x split packages - no deprecated top-level imports)
+langchain-core>=1.0,<2
+langchain-text-splitters>=1.0,<2
+langchain-community>=0.4,<1      # provides PyPDFLoader
+langchain-chroma>=1.0,<2
+langchain-google-genai>=4.0,<5   # Gemini chat + embeddings (current google-genai SDK)
+chromadb>=1.0,<2
+pypdf>=5.0
+
+# Only needed to regenerate the demo policy PDFs (data/make_sample_pdfs.py)
+reportlab>=4.0
